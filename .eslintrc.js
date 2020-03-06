@@ -1,20 +1,22 @@
 module.exports = {
-    env: {
+    parserOptions: {
+        parser: "babel-eslint",
+        //...
+    },
+    "env": {
         "browser": true,
         "es6": true
     },
-    globals: {
+    "globals": {
         "module": true,
         "require": true,
         "process": true,
     },
-    extends: "eslint:recommended",
-    parserOptions: {
-        sourceType: "module",
-        parser: "babel-eslint",
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "sourceType": "module"
     },
-    parser: "babel-eslint",
-    rules: {
+    "rules": {
         "indent": [
             "error",
             4
